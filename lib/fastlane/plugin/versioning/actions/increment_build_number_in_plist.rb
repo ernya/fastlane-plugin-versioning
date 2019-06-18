@@ -10,7 +10,7 @@ module Fastlane
           build_array[-1] = build_array[-1]+1            
           next_build_number = build_array.join(".")
         end
-	puts(params)
+	puts(params#all_keys)
         if Helper.test?
           plist = "/tmp/fastlane/tests/fastlane/Info.plist"
         else
